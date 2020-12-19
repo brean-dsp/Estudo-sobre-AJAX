@@ -24,6 +24,17 @@
                         jsonFilmes = xmlToJson(domFilmes)
 
                         console.log(jsonFilmes)
+
+                        /*<div class="row">
+                            <div class="col">
+                                <p><strong>Título:</strong> Título do filme</p>
+                                <p><strong>Resumo:</strong> Resumo do filme</p>
+                                <p><strong>Gênero:</strong> Gênero do filme</p>
+                                <p><strong>Elenco:</strong> Elenco do filme</p>
+                                <p><strong>Data de lançamento:</strong> Data de lançamento do filme</p>
+                                <hr>
+                            </div>
+                        </div>*/
                     }
 
                     if(xmlHttp.readyState == 4 && xmlHttp.status == 404){
@@ -45,11 +56,13 @@
         </nav>
 
         <div class="container">
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col">
                     <button type="button" class="btn btn-success" onclick="getFilmes()">Listar Filmes</button>
                 </div>
             </div>
+
+            
         </div>
     </body>
 
